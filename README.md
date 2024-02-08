@@ -74,6 +74,19 @@ O retorno deverá ser algo como:
 
 ## Comandos Úteis
 ```bash
+
+# Verificar quais arquivos estão na area de stage para serem commitados
+$ git status
+
+# Adicionar os arquivos que você deseja commitar
+$ git add .
+
+# Mensagem do commit, use boas práticas, siga a convenção do "Conventional Commits", link -> https://www.conventionalcommits.org/pt-br/v1.0.0-beta.4/#resumo
+$ git commit -m "feat: Adding Amazing Feature"
+
+# Realizar o push (subida) do seu código para o github
+$ git push
+
 # Gera o arquivo de configuração  do pylint.
 $ pylint --generate-rcfile > .pylintrc
 
@@ -82,6 +95,12 @@ $ pre-commit install
 
 # Caso você decida contribuir e adicionar uma nova dependência, após fazer o pip install XPTO, execute o pip freeze para adicionar no requirements.txt as dependências que foram instaladas.
 $ pip freeze > requirements.txt
+
+# Executa o pytest com cobertura de código
+$ pytest --cov=.
+
+# Além de executar o pytest com cobertura de código, ele gerá o relátorio HTML da cobertura mais detalhada.
+$ pytest --cov=. --cov-report=html
 ```
 
 ## Tecnologias
