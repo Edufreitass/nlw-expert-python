@@ -1,0 +1,18 @@
+NLW Expert Python
+
+1. Criar projeto e após a criação entrar no diretório do projeto
+2. Criar um .gitignore e adicionar "**/__pycache__" para ser ignorado
+3. Instalar o "pip install virtualenv"
+x. Criar o ambiente virtual "py -m venv .venv"
+4. Ativar o ambiente virtual, usando Git Bash "source .venv\Scripts\activate"
+5. Adicionar no .gitignore o diretório ".venv"
+6. Instalar o "pip install pylint" e também a extensão da Microsoft "Pylint v2023.10.1"
+7. Executar o "pylint --generate-rcfile > .pylintrc" para gerar o arquivo de configuração do Pylint
+8. Adicionar as configurações necessárias no arquivo do Pylint
+9. Instalar o "pip install pre-commit" e criar o arquivo ".pre-commit-config.yaml"
+10. Adicionar as configuraçoes necessárias do pre-commit e depois executar o "pre-commit install"
+11. Executar o ".venv/Scripts/pip freeze > requirements.txt"
+12. Instalar o "pip install Flask"
+13. Instalar o "pip install python-barcode"
+14. Instalar o "pip install pillow"
+15. Executar o ".venv/Scripts/pip freeze > requirements.txt"
